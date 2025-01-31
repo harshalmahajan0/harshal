@@ -1,0 +1,17 @@
+models:
+  - name: int_players
+    columns:
+      - name: team_name
+        description: this will have international and club level teams
+        data_tests:
+          - accepted_values:
+              values: ["South Africa","West Indies"]
+          
+  - name: int_teams
+    description: this has list of all the teams. team_name will always be unique
+    columns:
+      - name: team_name
+        data_tests:
+          - unique
+          - not_null
+              

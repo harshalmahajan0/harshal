@@ -14,4 +14,14 @@ models:
         data_tests:
           - unique
           - not_null
+        
+  - name: int_match_innings
+    columns: 
+      - name: runs_batter
+        data_tests:
+          - positive_values_test
+
+
+      
+   
               
